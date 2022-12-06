@@ -54,6 +54,10 @@ class bukuController extends Controller
         return redirect('/buku')->with('pesan', 'Data Buku Berhasil di Hapus');
     }
 
+
+
+    
+
     public function edit($id){
         $data_buku = DB::table('buku')->where('id',$id)->get();
         return view('edit',compact('data_buku'));
